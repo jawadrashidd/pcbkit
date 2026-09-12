@@ -52,7 +52,7 @@ from tile_obb_dataset import DatasetLayout, TileConfig, tile_dataset, verify_til
 from yolo_obb_to_dota import DatasetLayout as ConvLayout, ConvertConfig, convert_dataset
 
 # 1. tile the boards
-layout = DatasetLayout(root="/kaggle/working/PCB-Defect-6")
+layout = DatasetLayout(root="insert your root dataset")
 cfg = TileConfig(
     output_root="/kaggle/working/PCB-Defect-tiles",
     tile=1024, overlap=200, bg_keep=0.7, val_split="valid",
